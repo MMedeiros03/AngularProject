@@ -1,0 +1,39 @@
+<form action="" class="form-group">
+    <div class="form-icon">
+        <img src="/assets/Images/png/icon-hour.png"/>
+        horario 
+    </div>
+
+    <h3> Qual horario voce quer treinar?</h3>
+
+    <div class="radio-wrapper">
+        <input type="radio" name="Manha" value="Manha"> 
+        <label for="Manha">Manha</label>
+        <span>06:00 ás 12h</span>
+    </div>
+
+    <div class="radio-wrapper">
+        <input type="radio" name="Tarde" value="Tarde">
+        <label for="Tarde">Tarde</label>
+        <span>12:01 ás 18:00h</span>
+    </div>
+
+    <div class="radio-wrapper">
+        <input type="radio" name="Noite" value="Noite">
+        <label for="Noite">Noite</label>
+        <span>18:01 ás 23h</span>
+    </div>
+    
+    <div class="checkbox-wrapper">
+        <input type="checkbox" name="show-closed" id="">
+        <label for="show-closed">Exibir unidades fechadas</label>
+
+        <span>Resultados encontrados: {{ results.length }}</span>
+    </div>
+    
+    <div class="btn-wrapper">
+        <div class="btn btn-primary">Encontrar unidade</div>
+        <div class="btn btn-secundary">Limpar</div>
+    </div>
+
+</form>
