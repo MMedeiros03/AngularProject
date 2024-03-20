@@ -95,6 +95,11 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    gap: 12px;
+}
+
+.form-group .checkbox-wrapper input[type="checkbox"]{
+    margin-right: 4px;
 }
 
 
