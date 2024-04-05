@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { GetUnitsService } from 'src/app/Services/get-units.service';
 import { Location } from 'src/app/Types/location-interface';
 
@@ -9,14 +9,14 @@ import { Location } from 'src/app/Types/location-interface';
 })
 export class CardsListComponent implements OnInit {
 
-  unitsList : Location[] = [];
+  @Input() unitsList : Location[] = [];
 
-  constructor(private unitService : GetUnitsService) { 
+  constructor() { 
 
   }
 
   ngOnInit(): void {
-    this.unitsList = this.unitService.getFilteredUnits(); 
+    console.log(this.unitsList)
   }
 
 }
